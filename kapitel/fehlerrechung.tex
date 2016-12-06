@@ -1,14 +1,14 @@
 \section{Berechnung der Messunsicherheiten}
 Für die Unsicherheit der ATP Stoffmengen wurde eine relative Unsicherheit
-von 5\% durch Pippetierfehler angenommen. $N_{err} = 5 \%$
-Bei der Ausmessung Aktingeschwindigkeit wurden mindestens 10 Aktinfasern gewählt,
+von 5\% durch Pippetierfehler angenommen., also $N_{err} = 5 \%$
+Bei der Messung der Aktingeschwindigkeit wurden mindestens 10 Aktinfasern gewählt,
 die sich im Zeitintervall von 10 Sekunden durchgehend bewegt haben.
 Aus den gemessenen Distanzen wurde der Mittelwert, und die Varianz bestimmt.
 \[
   \text{Pixel}_{err} = \sqrt{\sigma} + 2
 \]
-Zu dem Distanzfehler noch der Auflösungsfehler des Mikroskops
-von $2 \cdot \text{Pixellänge}$ aufaddiert. Der Faktor 2 kommt daher,
+Zu dem Distanzfehler wird noch der Auflösungsfehler des Mikroskops
+von $2 \cdot \text{Pixellänge}$ dazu addiert. Der Faktor 2 kommt daher,
 dass man am Anfang und am Ende der Aktinfaser den Fehler über eine Pixellänge hat.
 \[
   v_{err} = \frac{\text{Pixel}_{err} \cdot \text{Pixellänge}}{10s}
@@ -22,7 +22,7 @@ $m = \sfrac{K_m}{v_{max}} \pm m_{err}$ und $t = \sfrac{1}{v_{max}} \pm t_{err}$ 
 	\label{equ:staterr}
 \end{equation}
 Mit $K_m = \sfrac{m}{t}$ und $v_{max} = \sfrac{1}{t}$ und unter Verwendung der
-gausschen Fehlerfortpflanzung \ref{equ:staterr} wurden die
+gaußschen Fehlerfortpflanzung \ref{equ:staterr} wurden die
 Fehler des Fits mit
 \[
   K_{m_{err}} = \sqrt{(\frac{m_{err}}{t})^2 + (\frac{m \cdot t_{err}}{t^2})^2}
@@ -31,7 +31,7 @@ Fehler des Fits mit
   v_{max_{err}} = \frac{t_{err}}{t^2}
 \]
 errechnet.
-Ensprechend wurden die Fehlerwerte für die Fehlerbalken Berechnet.
+Ensprechend wurden die Längen der Fehlerbalken ermittelt.
 Für die Berechnungen und das Plotten der Graphen wurde ein Pythonskript geschrieben.
 Dieses kann auf der Webseite \url{https://github.com/JackTheEngineer/molecular_motors}
 im Ordner \texttt{calc/} eingesehen werden.
